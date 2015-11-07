@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace WebJobsDemo.Controllers
 {
+    using azureQueue;
+
     using WebJobsDemo.Models;
 
     public class HomeController : Controller
@@ -36,6 +38,8 @@ namespace WebJobsDemo.Controllers
             var dbContext = new UsersContext();
             dbContext.Sources.Add(source);
             dbContext.SaveChanges();
+
+            new QueueMgr().AddMessageToQueue(source.ToolName).Wait();
             return RedirectToAction("Index");
         }
     }

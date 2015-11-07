@@ -315,6 +315,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\azureQueue\azureQueue.csproj">
+      <Project>{021247f8-4d53-43e5-bd3a-77b7a52c7816}</Project>
+      <Name>azureQueue</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FetchQueueJob\FetchQueueJob.csproj">
       <Project>{647E0732-4C98-4062-B4AE-49B78396918A}</Project>
       <Name>FetchQueueJob</Name>
