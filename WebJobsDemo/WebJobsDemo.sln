@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJobsDemo", "WebJobsDemo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJobsDemo.Tests", "WebJobsDemo.Tests\WebJobsDemo.Tests.csproj", "{043FC1D1-CF8F-4747-9F1D-E47589DBA73B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchQueueJob", "FetchQueueJob\FetchQueueJob.csproj", "{647E0732-4C98-4062-B4AE-49B78396918A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{043FC1D1-CF8F-4747-9F1D-E47589DBA73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{043FC1D1-CF8F-4747-9F1D-E47589DBA73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{043FC1D1-CF8F-4747-9F1D-E47589DBA73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647E0732-4C98-4062-B4AE-49B78396918A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647E0732-4C98-4062-B4AE-49B78396918A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647E0732-4C98-4062-B4AE-49B78396918A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647E0732-4C98-4062-B4AE-49B78396918A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
