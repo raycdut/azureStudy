@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace WebJobsDemo.Controllers
 {
+    using WebJobsDemo.Models;
+
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -27,6 +29,14 @@ namespace WebJobsDemo.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        [HttpPost]
+        public ActionResult SaveData(Source source)
+        {
+            var dbContext = new UsersContext();
+            dbContext.Sources.Add(source);
+            dbContext.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

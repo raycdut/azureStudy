@@ -16,6 +16,34 @@ namespace WebJobsDemo.Models
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Source> Sources { get; set; }
+        public DbSet<Report> Reports { get; set; }
+    }
+
+    [Table("TB_Source")]
+    public class Source
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int SourceId { get; set; }
+
+        public string ToolName { get; set; }
+
+        public string ToolScope { get; set; }
+    }
+
+    [Table("TB_Report")]
+    public class Report
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int ReportId { get; set; }
+
+        public int SourceId { get; set; }
+
+        public string ToolName { get; set; }
+
+        public string ToolScope { get; set; }
     }
 
     [Table("UserProfile")]

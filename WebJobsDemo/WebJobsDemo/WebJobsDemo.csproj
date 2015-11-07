@@ -201,6 +201,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511070623254_ini.cs" />
+    <Compile Include="Migrations\201511070623254_ini.Designer.cs">
+      <DependentUpon>201511070623254_ini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -314,6 +319,11 @@
       <Project>{647E0732-4C98-4062-B4AE-49B78396918A}</Project>
       <Name>FetchQueueJob</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201511070623254_ini.resx">
+      <DependentUpon>201511070623254_ini.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
